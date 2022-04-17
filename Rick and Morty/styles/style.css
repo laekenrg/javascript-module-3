@@ -2,8 +2,6 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(https://c.pxhere.com/photos/7e/e2/star_milky_way_background_night_starry_sky_night_sky_space_texture-674008.jpg!d);
-    background-size: cover;
-
     font-family: 'Creepster', cursive;
 }
 
@@ -12,6 +10,7 @@ a{
     color: #63cbfb;
     transition: color .8s;
     font-size: 20px;
+    cursor: pointer;
 }
 
 a:hover{
@@ -27,16 +26,36 @@ a:hover{
     margin-left: 30px;
     color: #63cbfb;
     -webkit-text-stroke: .1px rgb(236, 243, 134) ;
-    text-shadow: 3px 3px 20px rgb(109, 219, 81) ;
+    text-shadow: 3px 3px 50px rgb(109, 219, 81) ;
+    
 }
 
 .right-panel h1 {
     font-size: 50px;
-    
+
 }
 
 .right-panel h5 {
     font-size: 30px;
+}
+
+.img-personaje{
+    border-radius: 30px;
+    border: 5px solid #63cbfb;
+    box-shadow: 1px 1px 30px rgb(5, 247, 98);
+}
+
+.name-personaje{
+    font-size: 20px;
+    color: #63cbfb;
+    -webkit-text-stroke: .1px rgb(236, 252, 13) ;
+    text-shadow: 3px 3px 20px rgb(109, 219, 81) ;   
+}
+
+.estado-personaje{
+    color: #63cbfb;
+    -webkit-text-stroke: .1px rgb(13, 83, 25) ;
+    text-shadow: 3px 3px 50px rgb(109, 219, 81) ;   
 }
 .div-panels-api{
     

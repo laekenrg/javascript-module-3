@@ -1,7 +1,5 @@
 const root = document.querySelector("#root")
-const divsApi= '<div class="div-name-api"></div><div class="div-panels-api"><div class="left-panel"></div><div class="right-panel"></div></div>'
-console.log(root);
-root.innerHTML =divsApi;
+root.innerHTML ='<div class="div-name-api"></div><div class="div-panels-api"><div class="left-panel"></div><div class="right-panel"></div></div>'
 
 const nameApi = document.querySelector(".div-name-api")
 const imgTittle = document.createElement("img")
@@ -53,8 +51,7 @@ obtenerDescripcionEpisodio(1)
 
 const pintarInfoEpisodio = (episodio)=>{
 const rutaRightPanel = document.querySelector(".right-panel")
-const descripcionEp = `<h1>${episodio.name}</h1><h5>${episodio.air_date} | ${episodio.episode}</h5>`
-rutaRightPanel.innerHTML =descripcionEp;
+rutaRightPanel.innerHTML =`<h1>${episodio.name}</h1><h5>${episodio.air_date} | ${episodio.episode}</h5>`;
 }
 
 const pintarCaracteres = (lista)=>{
@@ -64,7 +61,7 @@ const pintarCaracteres = (lista)=>{
     rutaRightPanel.appendChild(personajesPresentes)
     console.log(lista);
     lista.forEach ((personaje)=>{
-        const estructuraTarjetas  = `<div class="tarjeta"> <img src="${personaje.image}" alt=""><div class="name-personaje">${personaje.name}</div><div class="estado-personaje">${personaje.species} | ${personaje.status}</div></div>`
+        const estructuraTarjetas  = `<div class="tarjeta"> <img class="img-personaje" src="${personaje.image}" alt="#"><div class="name-personaje"><h2>${personaje.name}</h2></div><div class="estado-personaje"><h3>${personaje.species} | ${personaje.status}</h3></div></div>`
         personajesPresentes.innerHTML = personajesPresentes.innerHTML+estructuraTarjetas;
     })
 }
