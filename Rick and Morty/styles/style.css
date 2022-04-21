@@ -1,80 +1,147 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url(https://c.pxhere.com/photos/7e/e2/star_milky_way_background_night_starry_sky_night_sky_space_texture-674008.jpg!d);
-    font-family: 'Creepster', cursive;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://c.pxhere.com/photos/7e/e2/star_milky_way_background_night_starry_sky_night_sky_space_texture-674008.jpg!d);
+  font-family: "Creepster", cursive;
 }
 
-a{
-    text-decoration: none;
-    color: #63cbfb;
-    transition: color .8s;
-    font-size: 20px;
-    cursor: pointer;
+.left-panel {
+  margin: 0px;
+}
+.episodios-individuales:hover {
+  color: #97ce4c;
 }
 
-a:hover{
-    color:  #97CE4C;
+.div-name-api {
+  display: flex;
+  justify-content: center;
 }
 
-.div-name-api{
-    display: flex;
-    justify-content: center;
-}
-
-.right-panel h1,h5{
-    margin-left: 30px;
-    color: #63cbfb;
-    -webkit-text-stroke: .1px rgb(236, 243, 134) ;
-    text-shadow: 3px 3px 50px rgb(109, 219, 81) ;
-    
+.right-panel h1,
+h5 {
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(236, 243, 134);
+  text-shadow: 3px 3px 50px rgb(109, 219, 81);
 }
 
 .right-panel h1 {
-    font-size: 50px;
-
+  font-size: 50px;
+  text-align: center;
 }
 
 .right-panel h5 {
-    font-size: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.img-personaje{
-    border-radius: 30px;
-    border: 5px solid #63cbfb;
-    box-shadow: 1px 1px 30px rgb(5, 247, 98);
+.img-personaje {
+  border-radius: 30px;
+  border: 5px solid #63cbfb;
+  box-shadow: 1px 1px 30px rgb(5, 247, 98);
+  height: 300px;
 }
 
-.name-personaje{
-    font-size: 20px;
-    color: #63cbfb;
-    -webkit-text-stroke: .1px rgb(236, 252, 13) ;
-    text-shadow: 3px 3px 20px rgb(109, 219, 81) ;   
+.name-personaje {
+  font-size: 20px;
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(236, 252, 13);
+  text-shadow: 3px 3px 20px rgb(109, 219, 81);
 }
 
-.estado-personaje{
-    color: #63cbfb;
-    -webkit-text-stroke: .1px rgb(13, 83, 25) ;
-    text-shadow: 3px 3px 50px rgb(109, 219, 81) ;   
+.name-personaje2 {
+  font-size: 40px;
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(236, 252, 13);
+  text-shadow: 3px 3px 20px rgb(109, 219, 81);
 }
-.div-panels-api{
-    
-   display: flex; 
- justify-content: center;
+.estado-personaje {
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(13, 83, 25);
+  text-shadow: 3px 3px 50px rgb(109, 219, 81);
 }
 
+.estado-personaje2 {
+  font-size: 30px;
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(13, 83, 25);
+  text-shadow: 3px 3px 50px rgb(109, 219, 81);
+}
+.div-panels-api {
+  display: flex;
+}
 
-.episodios-individuales{
-    display: flex;
-  margin-left: 13px;
-  margin-top: 7px;
+.episodios-individuales {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #63cbfb;
+  transition: color 0.8s;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 60px;
 }
-.container-personajes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+.container-personajes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.tarjeta{
-    margin: 5px 20px;
+.tarjeta {
+  margin: 5px 20px;
+}
+
+.container-episodios-presentes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datos-episodio-personaje {
+  margin-left: 80px;
+}
+.container-episodios-presentes h2 {
+  font-size: 30px;
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(236, 252, 13);
+  text-shadow: 3px 3px 20px rgb(109, 219, 81);
+  text-align: center;
+}
+
+.container-episodios-presentes h3 {
+  font-size: 30px;
+  color: #63cbfb;
+  -webkit-text-stroke: 0.1px rgb(13, 83, 25);
+  text-shadow: 3px 3px 50px rgb(109, 219, 81);
+  text-align: center;
+}
+
+.container-datos-personaje {
+  display: flex;
+  justify-content: center;
+}
+
+.datos-personajes {
+  margin-left: 40px;
+}
+
+.planeta-personaje {
+  cursor: pointer;
+  transition: color 0.8s;
+}
+
+.planeta-personaje:hover {
+  color: #97ce4c;
+}
+
+.boton-load-more {
+  background-color: #63cbfb;
+  color: rgb(13, 83, 25);
+  font-size: 26px;
+  border: 6px solid rgb(109, 219, 81);
+  border-radius: 15px;
+  transition: linear 1s;
+  font-family: "Creepster", cursive;
+  margin-left: 60px;
+}
+
+.boton-load-more:hover {
+  background-color: rgb(236, 252, 13);
 }
