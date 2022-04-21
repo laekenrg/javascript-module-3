@@ -103,7 +103,7 @@ const obtenerDescripcionPlaneta = async (planetaURL) => {
     pintarInfoPlaneta(infPlaneta);
     caracteres(infPlaneta.residents);
   } else {
-    alert("akdakdjad");
+    alert("Lo siento, planeta desconocido");
   }
 };
 
