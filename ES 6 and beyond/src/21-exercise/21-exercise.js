@@ -56,8 +56,7 @@ class Person {
 // Create the Employee class that extends the Person class
 class Employee extends Person {
     constructor(firstName,lastName,jobTitle){
-        super(firstName)
-        super(lastName)
+        super(firstName ,lastName)
         this.jobTitle = jobTitle
     }
 getJobTitle(){
@@ -72,7 +71,7 @@ getJobTitle(){
 // jobTitle: "Developer"
 //
 // Store the new instance in the `ana` variable
-let ana = new Person("Ana","Spark","Developer");
+let ana = new Employee("Ana","Spark","Developer");
 
 // Don’t change the code bellow this line
 export { Person, Employee, ana };
