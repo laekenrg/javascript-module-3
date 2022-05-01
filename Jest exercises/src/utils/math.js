@@ -2,7 +2,7 @@ export const add = (a, b) => a + b;
 export const subtract = (a, b) => a - b;
 
 export const calculator = {
-  add(a, b) {
+  add (a, b) {
     return a + b;
   },
 };
